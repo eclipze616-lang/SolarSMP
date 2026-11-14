@@ -1,0 +1,22 @@
+name: SolarSMP
+version: 1.0.0
+main: dev.solarsmp.SolarSMP
+api-version: '1.21'
+description: Solar SMP - spawn as one of the 8 planets with unique abilities and an energy system.
+commands:
+  solarsmp:
+    description: Solar SMP main command
+    usage: /solarsmp <ability <1|2> | recipes | info | config | give>
+    aliases: [ssmp]
+  setsolar:
+    description: Set a player's solar planet
+    usage: /setsolar <player> <planet>
+    permission: solarsmp.admin
+  setenergy:
+    description: Set a player's energy (0-5)
+    usage: /setenergy <player> <0-5>
+    permission: solarsmp.admin
+permissions:
+  solarsmp.admin:
+    description: Admin commands for Solar SMP
+    default: op
